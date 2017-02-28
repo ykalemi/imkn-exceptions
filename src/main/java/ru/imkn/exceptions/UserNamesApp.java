@@ -34,7 +34,7 @@ public class UserNamesApp {
         private static final UserStorage INSTANCE = new UserStorage();
         public static UserStorage getInstance() { return INSTANCE;}
 
-        private final List<UserInfo> users = new ArrayList<>();
+        private List<UserInfo> users;
 
         public void addUser(UserInfo user) {
             users.add(user);
